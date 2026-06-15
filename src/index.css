@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --text-color: #FFFFFF;
+  --primary-color: #B5D2CC;
+  --accent-color: #F1BF42;
+  --emphasis-color: #FF3318;
+  --dark-green-color: #162713;
+  --bg-color: #000000;
+  --border-color: rgba(255, 255, 255, 0.2);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply antialiased font-sans;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-out forwards;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

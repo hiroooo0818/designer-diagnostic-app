@@ -1,0 +1,43 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm config *)",
+      "Read(//Users/hiroyuki.hasegawa/**)",
+      "Bash(npm -v)",
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Skill(run)",
+      "Bash(timeout 30 bash -c 'until curl -sf http://localhost:5173 >/dev/null; do sleep 1; done')",
+      "Read(//private/tmp/**)",
+      "Bash(npm ls *)",
+      "Bash(node -e \"require\\('playwright'\\)\")",
+      "Bash(npx --yes playwright --version)",
+      "Bash(curl -s http://localhost:5173/)",
+      "Bash(curl -s \"http://localhost:5173/src/main.tsx\")",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git config *)",
+      "Bash(git push *)",
+      "Bash(gh auth *)",
+      "Read(//tmp/**)",
+      "Bash(curl -s http://localhost:5180/result/nonexistent-id -o /dev/null -w \"%{http_code}\\\\n\")",
+      "Bash(curl -s http://localhost:5180/ -o /dev/null -w \"%{http_code}\\\\n\")",
+      "Bash(curl *)",
+      "Bash(node -e \"require\\('puppeteer'\\)\")",
+      "Bash(kill %1)",
+      "Bash(jobs)",
+      "Bash(git mv *)",
+      "Bash(sips *)",
+      "Bash(GIT_CURL_VERBOSE=1 git push origin main)",
+      "Bash(git fetch *)",
+      "Bash(git merge *)",
+      "Bash(git remote *)",
+      "Bash(git checkout *)",
+      "Bash(GIT_CURL_VERBOSE=1 git push origin feature/ui-updates)",
+      "Bash(grep -o -E '\\(Category|Blocked|Reason|policy|reason\\)[^<]{0,100}' /tmp/zscaler_block.html)",
+      "Bash(grep -i -E 'class=\"[a-z_]*\"[^>]*>[A-Za-z0-9 ,.:/_-]{4,80}<' /tmp/zscaler_block.html)",
+      "Bash(python3 *)",
+      "Bash(zip -r -X /tmp/designer-diagnostic-app.zip . -x node_modules/* -x .git/* -x dist/* -x .env -x .DS_Store -x */.DS_Store)"
+    ]
+  }
+}
